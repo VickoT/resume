@@ -106,10 +106,12 @@ body {
   gap: 0.5rem;
 }
 
-.contact-list li .label {
-  color: var(--sidebar-text);
-  font-weight: 600;
-  min-width: 28px;
+.contact-list li i {
+  color: var(--accent);
+  width: 16px;
+  text-align: center;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
 .contact-list a {
@@ -310,28 +312,9 @@ section:last-child {
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* Earlier experience */
-.earlier-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 0.4rem;
-}
-
-.earlier-list li {
-  font-size: 0.86rem;
-  color: var(--muted);
-  padding: 0.22rem 0 0.22rem 1rem;
-  position: relative;
-  border-bottom: 1px solid var(--border);
-}
-
-.earlier-list li:last-child { border-bottom: none; }
-
-.earlier-list li::before {
-  content: '–';
-  position: absolute;
-  left: 0;
-  color: var(--accent);
+.entry-collapsible[open] .earlier-roles,
+.entry-collapsible:not([open]) .earlier-roles {
+  overflow: hidden;
 }
 
 /* Footer */
