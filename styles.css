@@ -270,6 +270,46 @@ section:last-child {
   margin-top: 0.3rem;
 }
 
+/* Collapsible entry */
+.entry-collapsible {
+  border: none;
+}
+
+.entry-collapsible summary {
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.entry-collapsible summary::-webkit-details-marker { display: none; }
+
+.entry-collapsible summary .entry-header h3::after {
+  content: ' ›';
+  color: var(--accent);
+  font-size: 0.9rem;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.entry-collapsible[open] summary .entry-header h3::after {
+  transform: rotate(90deg);
+}
+
+.earlier-roles {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding-left: 0.8rem;
+  border-left: 2px solid var(--border);
+}
+
+.earlier-role h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
 /* Earlier experience */
 .earlier-list {
   list-style: none;
