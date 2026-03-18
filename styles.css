@@ -22,6 +22,10 @@ body {
   color: var(--text);
   line-height: 1.7;
   padding: 2rem 1rem;
+  background-image: url('assets/favorance-xZFJISr_tN8-unsplash.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 .page {
@@ -243,6 +247,17 @@ section:last-child {
   color: var(--sidebar-bg);
   margin-bottom: 0.45rem;
   font-family: 'Helvetica Neue', Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.org-logo {
+  width: 28px;
+  height: 28px;
+  border-radius: 4px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 .entry ul {
@@ -270,6 +285,52 @@ section:last-child {
   color: var(--muted);
   font-style: italic;
   margin-top: 0.3rem;
+}
+
+/* Certifications */
+.cert-year {
+  color: var(--muted);
+  font-size: 0.82em;
+}
+
+/* Publications */
+.pub-entry {
+  margin-bottom: 1.2rem;
+}
+
+.pub-entry:last-child {
+  margin-bottom: 0;
+}
+
+.pub-title {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.2rem;
+}
+
+.pub-title a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.pub-title a:hover {
+  color: var(--sidebar-bg);
+  text-decoration: underline;
+}
+
+.pub-meta {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--sidebar-bg);
+  margin-bottom: 0.15rem;
+}
+
+.pub-authors {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-size: 0.8rem;
+  color: var(--muted);
 }
 
 /* Collapsible entry */
