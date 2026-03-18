@@ -342,14 +342,25 @@ section:last-child {
   list-style: none;
   cursor: pointer;
   user-select: none;
+  padding: 0.4rem 0.6rem;
+  margin: 0 -0.6rem;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: rgba(45, 106, 79, 0.04);
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.entry-collapsible summary:hover {
+  background: var(--tag-bg);
+  border-color: var(--accent);
 }
 
 .entry-collapsible summary::-webkit-details-marker { display: none; }
 
 .entry-collapsible summary .entry-header h3::after {
-  content: ' ›';
+  content: ' ▶';
   color: var(--accent);
-  font-size: 0.9rem;
+  font-size: 0.72rem;
   transition: transform 0.2s;
   display: inline-block;
 }
