@@ -9,6 +9,13 @@
 </head>
 <body>
   <div class="page-wrapper">
+
+    <div class="lang-toggle">
+      <button class="lang-btn" data-lang="en" aria-label="English">🇬🇧</button>
+      <button class="lang-btn" data-lang="sv" aria-label="Svenska">🇸🇪</button>
+      <button class="lang-btn" data-lang="da" aria-label="Dansk">🇩🇰</button>
+    </div>
+
     <div class="page">
 
       <!-- ── Sidebar ── -->
@@ -20,11 +27,11 @@
 
         <div class="sidebar-name">
           <h1>Viktor Törnblom</h1>
-          <div class="title">IT Infrastructure &amp; Data Engineer</div>
+          <div class="title" data-i18n="title">IT Infrastructure &amp; Data Engineer</div>
         </div>
 
         <div class="sidebar-section">
-          <h2>Contact</h2>
+          <h2 data-i18n="contact">Contact</h2>
           <ul class="contact-list">
             <li><i class="fa-solid fa-location-dot"></i> Malmö / Lund, Sweden</li>
             <li><i class="fa-solid fa-envelope"></i><a href="mailto:vicko.tornblom@gmail.com">vicko.tornblom@gmail.com</a></li>
@@ -34,11 +41,11 @@
         </div>
 
         <div class="sidebar-section">
-          <h2>Skills</h2>
+          <h2 data-i18n="skills">Skills</h2>
           <div class="sidebar-skills">
 
             <div class="sidebar-skill-group">
-              <h4>Languages</h4>
+              <h4 data-i18n="sk-lang">Languages</h4>
               <div class="sidebar-tags">
                 <span class="sidebar-tag">Python</span>
                 <span class="sidebar-tag">R</span>
@@ -48,7 +55,7 @@
             </div>
 
             <div class="sidebar-skill-group">
-              <h4>Infrastructure &amp; Networking</h4>
+              <h4 data-i18n="sk-infra">Infrastructure &amp; Networking</h4>
               <div class="sidebar-tags">
                 <span class="sidebar-tag">Linux / Ubuntu</span>
                 <span class="sidebar-tag">HPC / Slurm</span>
@@ -61,7 +68,7 @@
             </div>
 
             <div class="sidebar-skill-group">
-              <h4>Data &amp; Automation</h4>
+              <h4 data-i18n="sk-data">Data &amp; Automation</h4>
               <div class="sidebar-tags">
                 <span class="sidebar-tag">PostgreSQL</span>
                 <span class="sidebar-tag">SQLAlchemy</span>
@@ -72,7 +79,7 @@
             </div>
 
             <div class="sidebar-skill-group">
-              <h4>AI &amp; Workflow</h4>
+              <h4 data-i18n="sk-ai">AI &amp; Workflow</h4>
               <div class="sidebar-tags">
                 <span class="sidebar-tag">RAG / LLMs</span>
                 <span class="sidebar-tag">Claude Code</span>
@@ -85,11 +92,11 @@
         </div>
 
         <div class="sidebar-section">
-          <h2>Languages</h2>
+          <h2 data-i18n="languages">Languages</h2>
           <ul class="lang-list">
-            <li><strong>Swedish</strong> — Native</li>
-            <li><strong>English</strong> — Fluent</li>
-            <li><strong>Danish</strong> — Proficient</li>
+            <li><strong data-i18n="lang-sv-name">Swedish</strong> — <span data-i18n="lang-sv-level">Native</span></li>
+            <li><strong data-i18n="lang-en-name">English</strong> — <span data-i18n="lang-en-level">Fluent</span></li>
+            <li><strong data-i18n="lang-da-name">Danish</strong> — <span data-i18n="lang-da-level">Proficient</span></li>
           </ul>
         </div>
 
@@ -99,103 +106,102 @@
       <main class="main">
 
         <section class="profile">
-          <h2>Profile</h2>
-          <p>
-            Technically versatile engineer with dual MSc degrees in Molecular Biotechnology
-            (Uppsala University) and Bioinformatics and Systems Biology (DTU). Experienced in
-            building and operating complex IT infrastructure: Linux/HPC environments, containerized
-            applications (Docker, Apptainer), relational databases (PostgreSQL), and automated
-            pipelines. Background spans network administration (Cisco), cloud API integration,
-            and IoT platform development. Detail-oriented systems thinker comfortable working
-            from low-level configuration to high-level design — with prior experience in regulated
+          <h2 data-i18n="sec-profile">Profile</h2>
+          <p data-i18n="profile-text">
+            Technically versatile engineer with dual MSc degrees in Molecular Biotechnology (Uppsala University)
+            and Bioinformatics and Systems Biology (DTU). Experienced in building and operating complex IT
+            infrastructure: Linux/HPC environments, containerized applications (Docker, Apptainer), relational
+            databases (PostgreSQL), and automated pipelines. Background spans network administration (Cisco),
+            cloud API integration, and IoT platform development. Detail-oriented systems thinker comfortable
+            working from low-level configuration to high-level design — with prior experience in regulated
             (cGMP) environments and a growing focus on IT infrastructure and security.
           </p>
         </section>
 
         <section>
-          <h2>Work Experience</h2>
+          <h2 data-i18n="sec-experience">Work Experience</h2>
 
           <div class="entry">
             <div class="entry-header">
-              <h3>Bioinformatician</h3>
-              <span class="date">Oct 2023 – present</span>
+              <h3 data-i18n="job1-title">Bioinformatician</h3>
+              <span class="date" data-i18n="job1-date">Oct 2023 – present</span>
             </div>
-            <div class="org">Lund University</div>
+            <div class="org" data-i18n="job1-org">Lund University</div>
             <ul>
-              <li>Operated and maintained Linux-based HPC infrastructure (Dardel supercomputer); managed job scheduling via Slurm.</li>
-              <li>Designed and implemented automated computational pipelines; containerized with Docker and Apptainer.</li>
-              <li>Architected and managed PostgreSQL databases (SQLAlchemy ORM) for large-scale scientific data.</li>
-              <li>Deployed Samba-based network file services for instrument data synchronization across platforms.</li>
-              <li>Built RAG-based applications and LLM-integrated workflows using MCP and N8N automation.</li>
+              <li data-i18n="job1-li1">Operated and maintained Linux-based HPC infrastructure (Dardel supercomputer); managed job scheduling via Slurm.</li>
+              <li data-i18n="job1-li2">Designed and implemented automated computational pipelines; containerized with Docker and Apptainer.</li>
+              <li data-i18n="job1-li3">Architected and managed PostgreSQL databases (SQLAlchemy ORM) for large-scale scientific data.</li>
+              <li data-i18n="job1-li4">Deployed Samba-based network file services for instrument data synchronization across platforms.</li>
+              <li data-i18n="job1-li5">Built RAG-based applications and LLM-integrated workflows using MCP and N8N automation.</li>
             </ul>
           </div>
 
           <div class="entry">
             <div class="entry-header">
-              <h3>Laboratory Engineer</h3>
+              <h3 data-i18n="job2-title">Laboratory Engineer</h3>
               <span class="date">Sep 2018 – Jan 2023</span>
             </div>
-            <div class="org">Octapharma, Stockholm</div>
+            <div class="org" data-i18n="job2-org">Octapharma, Stockholm</div>
             <ul>
-              <li>QC assays under cGMP and SOP development.</li>
-              <li>Developed statistical tools for assay evaluation.</li>
-              <li>Instrument qualification and LEAN process improvements.</li>
+              <li data-i18n="job2-li1">QC assays under cGMP and SOP development.</li>
+              <li data-i18n="job2-li2">Developed statistical tools for assay evaluation.</li>
+              <li data-i18n="job2-li3">Instrument qualification and LEAN process improvements.</li>
             </ul>
           </div>
 
           <details class="entry entry-collapsible">
             <summary>
               <div class="entry-header">
-                <h3>Earlier experiences</h3>
-                <span class="date">2010 – 2018</span>
+                <h3 data-i18n="sec-earlier">Earlier experiences</h3>
+                <span class="date" data-i18n="earlier-date">2010 – 2018</span>
               </div>
             </summary>
             <div class="earlier-roles">
 
               <div class="earlier-role">
                 <div class="entry-header">
-                  <h4>Microbiologist</h4>
+                  <h4 data-i18n="e1-title">Microbiologist</h4>
                   <span class="date">Apr 2017 – Aug 2018</span>
                 </div>
-                <div class="org">APL, Stockholm</div>
+                <div class="org" data-i18n="e1-org">APL, Stockholm</div>
                 <ul>
-                  <li>Microbiological quality control testing for pharmaceutical products.</li>
-                  <li>Environmental monitoring and sterility testing under GMP.</li>
+                  <li data-i18n="e1-li1">Microbiological quality control testing for pharmaceutical products.</li>
+                  <li data-i18n="e1-li2">Environmental monitoring and sterility testing under GMP.</li>
                 </ul>
               </div>
 
               <div class="earlier-role">
                 <div class="entry-header">
-                  <h4>Laboratory Engineer, PCR Dept.</h4>
+                  <h4 data-i18n="e2-title">Laboratory Engineer, PCR Dept.</h4>
                   <span class="date">Nov 2016 – Mar 2017</span>
                 </div>
-                <div class="org">Octapharma, Stockholm</div>
+                <div class="org" data-i18n="e2-org">Octapharma, Stockholm</div>
                 <ul>
-                  <li>PCR-based testing of plasma products under cGMP conditions.</li>
+                  <li data-i18n="e2-li1">PCR-based testing of plasma products under cGMP conditions.</li>
                 </ul>
               </div>
 
               <div class="earlier-role">
                 <div class="entry-header">
-                  <h4>Project Assistant</h4>
+                  <h4 data-i18n="e3-title">Project Assistant</h4>
                   <span class="date">Jun 2015 – Jan 2016</span>
                 </div>
-                <div class="org">Uppsala University</div>
+                <div class="org" data-i18n="e3-org">Uppsala University</div>
                 <ul>
-                  <li>Supported research in molecular biology laboratory.</li>
-                  <li>Cloning, cell culture, and experimental assays.</li>
+                  <li data-i18n="e3-li1">Supported research in molecular biology laboratory.</li>
+                  <li data-i18n="e3-li2">Cloning, cell culture, and experimental assays.</li>
                 </ul>
               </div>
 
               <div class="earlier-role">
                 <div class="entry-header">
-                  <h4>Support Handler</h4>
+                  <h4 data-i18n="e4-title">Support Handler</h4>
                   <span class="date">2010 – 2012</span>
                 </div>
                 <div class="org">Ericsson, Linköping</div>
                 <ul>
-                  <li>Provided global support for software license handling and order administration.</li>
-                  <li>Worked as seasonal staff during three consecutive summers.</li>
+                  <li data-i18n="e4-li1">Provided global support for software license handling and order administration.</li>
+                  <li data-i18n="e4-li2">Worked as seasonal staff during three consecutive summers.</li>
                 </ul>
               </div>
 
@@ -204,43 +210,43 @@
         </section>
 
         <section>
-          <h2>Education</h2>
+          <h2 data-i18n="sec-education">Education</h2>
 
           <div class="entry">
             <div class="entry-header">
-              <h3>MSc in Bioinformatics and Systems Biology</h3>
+              <h3 data-i18n="edu1-title">MSc in Bioinformatics and Systems Biology</h3>
               <span class="date">Feb 2020 – Mar 2022</span>
             </div>
-            <div class="org"><img class="org-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Danmarks_Tekniske_Universitet_%28logo%29.svg/200px-Danmarks_Tekniske_Universitet_%28logo%29.svg.png" alt="DTU">Technical University of Denmark (DTU)</div>
-            <p class="thesis">Thesis: "Microbiota dysbiosis and immunological effects of atopic dermatitis-mediated skin sensitization to food allergens"</p>
+            <div class="org"><img class="org-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Danmarks_Tekniske_Universitet_%28logo%29.svg/200px-Danmarks_Tekniske_Universitet_%28logo%29.svg.png" alt="DTU"><span data-i18n="edu1-org">Technical University of Denmark (DTU)</span></div>
+            <p class="thesis" data-i18n="edu1-thesis">Thesis: "Microbiota dysbiosis and immunological effects of atopic dermatitis-mediated skin sensitization to food allergens"</p>
           </div>
 
           <div class="entry">
             <div class="entry-header">
-              <h3>MSc in Molecular Biotechnology Engineering (Civilingenjör)</h3>
+              <h3 data-i18n="edu2-title">MSc in Molecular Biotechnology Engineering (Civilingenjör)</h3>
               <span class="date">Sep 2009 – May 2016</span>
             </div>
-            <div class="org"><img class="org-logo" src="assets/logos/uu.png" alt="Uppsala University">Uppsala University, Sweden</div>
-            <p class="thesis">Thesis: "Development of a CRISPR system for gene knockouts in Diplomonad parasites"</p>
+            <div class="org"><img class="org-logo" src="assets/logos/uu.png" alt="Uppsala University"><span data-i18n="edu2-org">Uppsala University, Sweden</span></div>
+            <p class="thesis" data-i18n="edu2-thesis">Thesis: "Development of a CRISPR system for gene knockouts in Diplomonad parasites"</p>
           </div>
 
           <details class="entry entry-collapsible">
             <summary>
               <div class="entry-header">
-                <h3>Exchange Semester</h3>
+                <h3 data-i18n="edu3-title">Exchange Semester</h3>
                 <span class="date">Fall 2013</span>
               </div>
             </summary>
             <div class="org"><img class="org-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/National_Taiwan_University_seal.svg/250px-National_Taiwan_University_seal.svg.png" alt="NTU">National Taiwan University, Taipei, Taiwan</div>
             <ul>
-              <li>Engineering and biotechnology courses.</li>
-              <li>Introductory Mandarin.</li>
+              <li data-i18n="edu3-li1">Engineering and biotechnology courses.</li>
+              <li data-i18n="edu3-li2">Introductory Mandarin.</li>
             </ul>
           </details>
         </section>
 
         <section>
-          <h2>Certifications</h2>
+          <h2 data-i18n="sec-certs">Certifications</h2>
 
           <div class="entry">
             <div class="org"><img class="org-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cisco_logo_blue_2016.svg/200px-Cisco_logo_blue_2016.svg.png" alt="Cisco">Cisco Networking Academy</div>
@@ -254,7 +260,7 @@
         </section>
 
         <section>
-          <h2>Publications</h2>
+          <h2 data-i18n="sec-pubs">Publications</h2>
 
           <div class="pub-entry">
             <div class="pub-title"><a href="https://doi.org/10.1016/j.molimm.2026.02.001" target="_blank">Skin sensitisation to gluten in the absence and presence of atopic dermatitis drives changes in skin and systemic T cell phenotype composition in a rat model of food allergy</a></div>
@@ -280,8 +286,252 @@
     </div>
 
     <footer>
-      Viktor Törnblom &mdash; updated March 2026
+      <span data-i18n="footer">Viktor Törnblom &mdash; updated March 2026</span>
     </footer>
   </div>
+
+  <script>
+    const i18n = {
+      en: {
+        'title':        'IT Infrastructure &amp; Data Engineer',
+        'contact':      'Contact',
+        'skills':       'Skills',
+        'sk-lang':      'Languages',
+        'sk-infra':     'Infrastructure &amp; Networking',
+        'sk-data':      'Data &amp; Automation',
+        'sk-ai':        'AI &amp; Workflow',
+        'languages':    'Languages',
+        'lang-sv-name': 'Swedish',
+        'lang-sv-level':'Native',
+        'lang-en-name': 'English',
+        'lang-en-level':'Fluent',
+        'lang-da-name': 'Danish',
+        'lang-da-level':'Proficient',
+
+        'sec-profile':  'Profile',
+        'profile-text': 'Technically versatile engineer with dual MSc degrees in Molecular Biotechnology (Uppsala University) and Bioinformatics and Systems Biology (DTU). Experienced in building and operating complex IT infrastructure: Linux/HPC environments, containerized applications (Docker, Apptainer), relational databases (PostgreSQL), and automated pipelines. Background spans network administration (Cisco), cloud API integration, and IoT platform development. Detail-oriented systems thinker comfortable working from low-level configuration to high-level design — with prior experience in regulated (cGMP) environments and a growing focus on IT infrastructure and security.',
+
+        'sec-experience':'Work Experience',
+        'job1-title':   'Bioinformatician',
+        'job1-date':    'Oct 2023 – present',
+        'job1-org':     'Lund University',
+        'job1-li1':     'Operated and maintained Linux-based HPC infrastructure (Dardel supercomputer); managed job scheduling via Slurm.',
+        'job1-li2':     'Designed and implemented automated computational pipelines; containerized with Docker and Apptainer.',
+        'job1-li3':     'Architected and managed PostgreSQL databases (SQLAlchemy ORM) for large-scale scientific data.',
+        'job1-li4':     'Deployed Samba-based network file services for instrument data synchronization across platforms.',
+        'job1-li5':     'Built RAG-based applications and LLM-integrated workflows using MCP and N8N automation.',
+
+        'job2-title':   'Laboratory Engineer',
+        'job2-org':     'Octapharma, Stockholm',
+        'job2-li1':     'QC assays under cGMP and SOP development.',
+        'job2-li2':     'Developed statistical tools for assay evaluation.',
+        'job2-li3':     'Instrument qualification and LEAN process improvements.',
+
+        'sec-earlier':  'Earlier experiences',
+        'earlier-date': '2010 – 2018',
+
+        'e1-title':     'Microbiologist',
+        'e1-org':       'APL, Stockholm',
+        'e1-li1':       'Microbiological quality control testing for pharmaceutical products.',
+        'e1-li2':       'Environmental monitoring and sterility testing under GMP.',
+
+        'e2-title':     'Laboratory Engineer, PCR Dept.',
+        'e2-org':       'Octapharma, Stockholm',
+        'e2-li1':       'PCR-based testing of plasma products under cGMP conditions.',
+
+        'e3-title':     'Project Assistant',
+        'e3-org':       'Uppsala University',
+        'e3-li1':       'Supported research in molecular biology laboratory.',
+        'e3-li2':       'Cloning, cell culture, and experimental assays.',
+
+        'e4-title':     'Support Handler',
+        'e4-li1':       'Provided global support for software license handling and order administration.',
+        'e4-li2':       'Worked as seasonal staff during three consecutive summers.',
+
+        'sec-education':'Education',
+        'edu1-title':   'MSc in Bioinformatics and Systems Biology',
+        'edu1-org':     'Technical University of Denmark (DTU)',
+        'edu1-thesis':  'Thesis: "Microbiota dysbiosis and immunological effects of atopic dermatitis-mediated skin sensitization to food allergens"',
+
+        'edu2-title':   'MSc in Molecular Biotechnology Engineering (Civilingenjör)',
+        'edu2-org':     'Uppsala University, Sweden',
+        'edu2-thesis':  'Thesis: "Development of a CRISPR system for gene knockouts in Diplomonad parasites"',
+
+        'edu3-title':   'Exchange Semester',
+        'edu3-li1':     'Engineering and biotechnology courses.',
+        'edu3-li2':     'Introductory Mandarin.',
+
+        'sec-certs':    'Certifications',
+        'sec-pubs':     'Publications',
+        'footer':       'Viktor Törnblom \u2014 updated March 2026',
+      },
+
+      sv: {
+        'title':        'IT-infrastruktur &amp; Datatekniker',
+        'contact':      'Kontakt',
+        'skills':       'Kompetenser',
+        'sk-lang':      'Programmeringsspråk',
+        'sk-infra':     'Infrastruktur &amp; Nätverk',
+        'sk-data':      'Data &amp; Automatisering',
+        'sk-ai':        'AI &amp; Arbetsflöde',
+        'languages':    'Språk',
+        'lang-sv-name': 'Svenska',
+        'lang-sv-level':'Modersmål',
+        'lang-en-name': 'Engelska',
+        'lang-en-level':'Flytande',
+        'lang-da-name': 'Danska',
+        'lang-da-level':'God förmåga',
+
+        'sec-profile':  'Profil',
+        'profile-text': 'Tekniskt mångsidig ingenjör med dubbla civilingenjörsexamina i molekylär bioteknik (Uppsala universitet) och bioinformatik och systembiologi (DTU). Erfarenhet av att bygga och drifta komplex IT-infrastruktur: Linux/HPC-miljöer, containeriserade applikationer (Docker, Apptainer), relationsdatabaser (PostgreSQL) och automatiserade pipelines. Bakgrund inom nätverksadministration (Cisco), molntjänstintegration och IoT-plattformsutveckling. Detaljorienterad systemtänkare van att arbeta från lågnivåkonfiguration till övergripande design — med tidigare erfarenhet från reglerade (cGMP) miljöer och ett växande fokus på IT-infrastruktur och säkerhet.',
+
+        'sec-experience':'Arbetslivserfarenhet',
+        'job1-title':   'Bioinformatiker',
+        'job1-date':    'Okt 2023 – nuvarande',
+        'job1-org':     'Lunds universitet',
+        'job1-li1':     'Driftade och underhöll Linux-baserad HPC-infrastruktur (Dardel-superdatorn); hanterade jobbschemaläggning via Slurm.',
+        'job1-li2':     'Designade och implementerade automatiserade beräkningspipelines; containeriserade med Docker och Apptainer.',
+        'job1-li3':     'Designade och förvaltade PostgreSQL-databaser (SQLAlchemy ORM) för storskalig vetenskaplig data.',
+        'job1-li4':     'Driftsatte Samba-baserade nätverksfilstjänster för instrumentdatasynkronisering mellan plattformar.',
+        'job1-li5':     'Byggde RAG-baserade applikationer och LLM-integrerade arbetsflöden med MCP och N8N.',
+
+        'job2-title':   'Laboratorieingenjör',
+        'job2-org':     'Octapharma, Stockholm',
+        'job2-li1':     'KK-analyser under cGMP och SOP-utveckling.',
+        'job2-li2':     'Utvecklade statistiska verktyg för analysvalidering.',
+        'job2-li3':     'Instrumentkvalificering och LEAN-processförbättringar.',
+
+        'sec-earlier':  'Tidigare erfarenheter',
+        'earlier-date': '2010 – 2018',
+
+        'e1-title':     'Mikrobiolog',
+        'e1-org':       'APL, Stockholm',
+        'e1-li1':       'Mikrobiologisk kvalitetskontroll för läkemedelsprodukter.',
+        'e1-li2':       'Miljöövervakning och sterilitetstestning under GMP.',
+
+        'e2-title':     'Laboratorieingenjör, PCR-avd.',
+        'e2-org':       'Octapharma, Stockholm',
+        'e2-li1':       'PCR-baserad testning av plasmaprodukter under cGMP-förhållanden.',
+
+        'e3-title':     'Projektassistent',
+        'e3-org':       'Uppsala universitet',
+        'e3-li1':       'Stödde forskning i molekylärbiologilaboratorium.',
+        'e3-li2':       'Kloning, cellodling och experimentella analyser.',
+
+        'e4-title':     'Supporthandläggare',
+        'e4-li1':       'Gav global support för programvarulicenshantering och orderadministration.',
+        'e4-li2':       'Arbetade som säsongsanställd under tre konsekutiva somrar.',
+
+        'sec-education':'Utbildning',
+        'edu1-title':   'MSc i Bioinformatik och Systembiologi',
+        'edu1-org':     'Danmarks Tekniska Universitet (DTU)',
+        'edu1-thesis':  'Examensarbete: "Microbiota dysbiosis and immunological effects of atopic dermatitis-mediated skin sensitization to food allergens"',
+
+        'edu2-title':   'Civilingenjör i Molekylär Bioteknik',
+        'edu2-org':     'Uppsala universitet, Sverige',
+        'edu2-thesis':  'Examensarbete: "Development of a CRISPR system for gene knockouts in Diplomonad parasites"',
+
+        'edu3-title':   'Utbytestermin',
+        'edu3-li1':     'Ingenjörs- och bioteknikkurser.',
+        'edu3-li2':     'Grundläggande mandarin.',
+
+        'sec-certs':    'Certifieringar',
+        'sec-pubs':     'Publikationer',
+        'footer':       'Viktor Törnblom \u2014 uppdaterad mars 2026',
+      },
+
+      da: {
+        'title':        'IT-infrastruktur &amp; Dataingeniør',
+        'contact':      'Kontakt',
+        'skills':       'Kompetencer',
+        'sk-lang':      'Programmeringssprog',
+        'sk-infra':     'Infrastruktur &amp; Netværk',
+        'sk-data':      'Data &amp; Automatisering',
+        'sk-ai':        'AI &amp; Arbejdsflow',
+        'languages':    'Sprog',
+        'lang-sv-name': 'Svensk',
+        'lang-sv-level':'Modersmål',
+        'lang-en-name': 'Engelsk',
+        'lang-en-level':'Flydende',
+        'lang-da-name': 'Dansk',
+        'lang-da-level':'Godt kendskab',
+
+        'sec-profile':  'Profil',
+        'profile-text': 'Teknisk alsidig ingeniør med to kandidatgrader i molekylær bioteknologi (Uppsala Universitet) og bioinformatik og systembiologi (DTU). Erfaring med at bygge og drifte kompleks IT-infrastruktur: Linux/HPC-miljøer, containeriserede applikationer (Docker, Apptainer), relationsdatabaser (PostgreSQL) og automatiserede pipelines. Baggrund inden for netværksadministration (Cisco), cloud API-integration og IoT-platformsudvikling. Detaljeorienteret systemtænker, der er fortrolig med at arbejde fra lavniveaukonfiguration til overordnet design — med tidligere erfaring fra regulerede (cGMP) miljøer og et voksende fokus på IT-infrastruktur og sikkerhed.',
+
+        'sec-experience':'Erhvervserfaring',
+        'job1-title':   'Bioinformatiker',
+        'job1-date':    'Okt 2023 – nu',
+        'job1-org':     'Lunds Universitet',
+        'job1-li1':     'Driftede og vedligeholdt Linux-baseret HPC-infrastruktur (Dardel-supercomputeren); håndterede jobplanlægning via Slurm.',
+        'job1-li2':     'Designede og implementerede automatiserede beregningspipelines; containeriserede med Docker og Apptainer.',
+        'job1-li3':     'Designede og forvaltede PostgreSQL-databaser (SQLAlchemy ORM) til storskaleret videnskabelig data.',
+        'job1-li4':     'Opsatte Samba-baserede netværksfilservices til instrumentdatasynkronisering på tværs af platforme.',
+        'job1-li5':     'Udviklede RAG-baserede applikationer og LLM-integrerede arbejdsflows med MCP og N8N.',
+
+        'job2-title':   'Laboratorieingeniør',
+        'job2-org':     'Octapharma, Stockholm',
+        'job2-li1':     'QC-analyser under cGMP og SOP-udvikling.',
+        'job2-li2':     'Udviklede statistiske værktøjer til analyseevaluering.',
+        'job2-li3':     'Instrumentkvalificering og LEAN-procesforbedringer.',
+
+        'sec-earlier':  'Tidligere erfaringer',
+        'earlier-date': '2010 – 2018',
+
+        'e1-title':     'Mikrobiolog',
+        'e1-org':       'APL, Stockholm',
+        'e1-li1':       'Mikrobiologisk kvalitetskontrol af lægemiddelprodukter.',
+        'e1-li2':       'Miljøovervågning og sterilitetstestning under GMP.',
+
+        'e2-title':     'Laboratorieingeniør, PCR-afd.',
+        'e2-org':       'Octapharma, Stockholm',
+        'e2-li1':       'PCR-baseret testning af plasmaprodukter under cGMP-betingelser.',
+
+        'e3-title':     'Projektassistent',
+        'e3-org':       'Uppsala Universitet',
+        'e3-li1':       'Støttede forskning på molekylærbiologilaboratorium.',
+        'e3-li2':       'Kloning, cellekultur og eksperimentelle analyser.',
+
+        'e4-title':     'Supportmedarbejder',
+        'e4-li1':       'Ydede global support til håndtering af softwarelicenser og ordreadministration.',
+        'e4-li2':       'Arbejdede som sæsonansat i tre på hinanden følgende somre.',
+
+        'sec-education':'Uddannelse',
+        'edu1-title':   'Kandidat i Bioinformatik og Systembiologi',
+        'edu1-org':     'Danmarks Tekniske Universitet (DTU)',
+        'edu1-thesis':  'Speciale: "Microbiota dysbiosis and immunological effects of atopic dermatitis-mediated skin sensitization to food allergens"',
+
+        'edu2-title':   'Civilingeniør i Molekylær Bioteknologi',
+        'edu2-org':     'Uppsala Universitet, Sverige',
+        'edu2-thesis':  'Speciale: "Development of a CRISPR system for gene knockouts in Diplomonad parasites"',
+
+        'edu3-title':   'Udvekslingsophold',
+        'edu3-li1':     'Ingeniør- og bioteknologikurser.',
+        'edu3-li2':     'Introduktion til mandarin.',
+
+        'sec-certs':    'Certificeringer',
+        'sec-pubs':     'Publikationer',
+        'footer':       'Viktor Törnblom \u2014 opdateret marts 2026',
+      }
+    };
+
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.dataset.i18n;
+        if (i18n[lang][key] !== undefined) el.innerHTML = i18n[lang][key];
+      });
+      document.documentElement.lang = lang;
+      localStorage.setItem('cv-lang', lang);
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('lang-btn--active', btn.dataset.lang === lang);
+      });
+    }
+
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+    });
+
+    applyLang(localStorage.getItem('cv-lang') || 'en');
+  </script>
 </body>
 </html>

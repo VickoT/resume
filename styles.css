@@ -398,6 +398,40 @@ footer {
   box-shadow: 0 2px 20px rgba(0,0,0,0.08);
   overflow: hidden;
   background: var(--surface);
+  position: relative;
+}
+
+.lang-toggle {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.7rem;
+  z-index: 10;
+  display: flex;
+  gap: 0.2rem;
+  background: rgba(0,0,0,0.18);
+  border-radius: 6px;
+  padding: 0.2rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  border-radius: 4px;
+  padding: 0.15rem 0.3rem;
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: opacity 0.15s, background 0.15s;
+}
+
+.lang-btn:hover {
+  opacity: 0.8;
+}
+
+.lang-btn--active {
+  opacity: 1;
+  background: rgba(255,255,255,0.2);
 }
 
 .page {
