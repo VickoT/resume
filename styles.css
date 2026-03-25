@@ -369,6 +369,10 @@ section:last-child {
   transform: rotate(90deg);
 }
 
+.entry-collapsible[open] > .org {
+  margin-top: 0.75rem;
+}
+
 .earlier-roles {
   margin-top: 0.8rem;
   display: flex;
